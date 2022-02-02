@@ -58,9 +58,6 @@ function ma(a) {
         d != a[c] && b[d]++
     });
 
-    document.getElementById('current_word').innerHTML = d.join("")
-
-    console.log(d);
     return e
 }
 
@@ -251,6 +248,9 @@ function ea(a, b) {
     };
     B = [];
     Y(0)
+
+    document.getElementById('current_word1').innerHTML = a[0]
+    document.getElementById('current_word2').innerHTML = a[1]
 }
 
 function ta(a, b) {
