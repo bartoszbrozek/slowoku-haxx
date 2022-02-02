@@ -275,7 +275,7 @@ function pa(a) {
 }
 
 function va() {
-    fetch('/api.php?action=getWordlist')
+    fetch('api.php?action=getWordlist')
         .then(response => response.text())
         .then(data => function () {
             for (var b = data, c, d = b.length, f = 0, k = [], h = 0; f + 1 < d;)
@@ -588,7 +588,7 @@ window.onload = function () {
             window.sldata.wd = wordid
             checkWord()
         } else {
-            fetch('/api.php?action=getWordId')
+            fetch('api.php?action=getWordId')
                 .then(response => response.json())
                 .then(data => {
                     window.sldata.wd = data.wordid
