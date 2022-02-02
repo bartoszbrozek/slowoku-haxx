@@ -582,7 +582,7 @@ var ka = {
     G = !1;
 window.onload = function () {
     document.getElementById('check').addEventListener('click', function () {
-        const wordid = document.getElementById('txt').value.replace('https://www.kurnik.pl/slowoku/?', '')
+        const wordid = document.getElementById('txt').value.replace('https://www.kurnik.pl/slowoku/?', '').replace('https://kurnik.pl/slowoku/?', '')
 
         if (wordid.length) {
             window.sldata.wd = wordid
